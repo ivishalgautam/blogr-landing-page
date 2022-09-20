@@ -1,0 +1,197 @@
+:root {
+  /* primary */
+  --light-red: hsl(356, 100%, 66%); /* (CTA text)*/
+  --very-light-red: hsl(355, 100%, 74%); /* (CTA hover background)*/
+  --very-dark-blue: hsl(208, 49%, 24%); /* (headings)*/
+  /* neutral */
+  --white: hsl(0, 0%, 100%); /* (text) */
+  --grayish-blue: hsl(240, 2%, 79%); /* (footer text) */
+  --very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy) */
+  --very-dark-black-blue: hsl(240, 10%, 16%); /* (footer background) */
+  /* Background gradient - Intro/CTA mobile nav: */
+  --very-light-red: hsl(13, 100%, 72%);
+  --light-red: hsl(353, 100%, 62%);
+  /* Background gradient - body: */
+  --very-dark-gray-blue: hsl(237, 17%, 21%);
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  /* padding  */
+  --padding-body: 10vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* header styles */
+header {
+  position: relative;
+  min-height: 85vh;
+  background: linear-gradient(
+    to right,
+    var(--very-light-red),
+    var(--light-red)
+  );
+  color: var(--white);
+  padding: 0 var(--padding-body);
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 90px;
+  overflow: hidden;
+}
+
+header::after {
+  content: url("./images/bg-pattern-intro-desktop.svg");
+  position: absolute;
+  top: -1350px;
+  left: -500px;
+}
+
+/* header top & bottom */
+header #top,
+header #bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* header top */
+header #top {
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+header #top .logo > img {
+  width: 5em;
+}
+header #top nav {
+  margin-right: auto;
+}
+header #top nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5em;
+}
+header #top nav ul .nav-list {
+  position: relative;
+}
+header #top nav ul .nav-list a {
+  color: var(--white);
+  margin-left: 2em;
+  list-style: none;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+header #top nav ul .nav-list a:hover {
+  text-decoration: underline;
+}
+header #top nav ul .nav-list .dropdown-menu-list {
+  position: absolute;
+  top: 2em;
+  display: none;
+  list-style: none;
+  background-color: var(--white);
+  padding: 1.5em;
+  padding-right: 3.2em;
+  border-radius: 0.4em;
+}
+header #top nav ul .nav-list .dropdown-menu-list li {
+  margin-bottom: 0.6em;
+}
+header #top nav ul .nav-list .dropdown-menu-list li:last-child {
+  margin-bottom: 0em;
+}
+header #top nav ul .nav-list .dropdown-menu-list li a {
+  margin-left: 0;
+  color: #000;
+}
+header #top nav ul .nav-list:hover .dropdown-menu-list,
+header #top nav ul .nav-list:focus .dropdown-menu-list {
+  display: block;
+}
+header #top .btn-container-top button {
+  padding: 0.7em 2em;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+header #top .btn-container-top button:nth-child(1) {
+  background-color: transparent;
+  color: var(--white);
+}
+header #top .btn-container-top button:nth-child(2) {
+  background-color: var(--white);
+  color: var(--light-red);
+}
+header #top .btn-container-top button:nth-child(2):hover {
+  color: var(--white);
+  background-color: var(--very-light-red);
+}
+
+/* header bottom */
+header #bottom {
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header #bottom .header-heading {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+header #bottom .header-para {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 1em 0 2.5em;
+}
+
+header #bottom .btn-container-bottom button {
+  padding: 0.7em 1em;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header #bottom .btn-container-bottom button:nth-child(1) {
+  background: var(--white);
+  color: var(--light-red);
+  margin-right: 0.8em;
+}
+
+header #bottom .btn-container-bottom button:nth-child(1):hover {
+  color: var(--white);
+  background-color: var(--very-light-red);
+}
+
+header #bottom .btn-container-bottom button:nth-child(2) {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+header #bottom .btn-container-bottom button:nth-child(2):hover {
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  color: var(--very-light-red);
+}
+/* header end */

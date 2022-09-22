@@ -2,6 +2,7 @@ const toggleNav = document.querySelector(".nav-toggle-mobile");
 const navOpen = document.querySelector(".nav-open");
 const navClose = document.querySelector(".nav-close");
 const navigation = document.querySelector(".nav-container-mobile");
+const dropdown = document.querySelectorAll(".nav-container-mobile .navigation ul .nav-list > a");
 
 toggleNav.addEventListener("click", function (e) {
   //   console.log(e.target.classList);
@@ -19,3 +20,12 @@ toggleNav.addEventListener("click", function (e) {
     navigation.classList.remove("nav-active")
   }
 });
+
+
+dropdown.forEach(item => item.addEventListener("click", (e) => {
+  // toggle active class to the parent which is li
+  e.target.parentElement.classList.toggle("active")
+
+  // toggle active class to the dropdown menu
+  e.target.nextElementSibling.classList.toggle("active")
+}))

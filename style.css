@@ -512,7 +512,6 @@ header #bottom .btn-container-bottom button:nth-child(2):hover {
     object-position: center;
   }
 
-  /* #section-1 .content .img-container img {} */
 }
 
 /* section 2 */
@@ -520,7 +519,12 @@ header #bottom .btn-container-bottom button:nth-child(2):hover {
   background: linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
   height: 37.5vh;
   border-radius: 0 90px 0;
-  /* padding-right: var(--padding-body); */
+}
+
+@media screen and (min-width:830px) {
+  #section-2 {
+    margin-top: 17em;
+  }
 }
 
 #section-2 .wrapper {

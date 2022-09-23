@@ -1,173 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
 
-    <title>[Blogr]</title>
-  </head>
-  <body>
-    <header>
-      <div class="bg-patterns">
-        <img
-          class="pattern-desktop"
-          src="./images/bg-pattern-intro-desktop.svg"
-          alt=""
-        />
-      </div>
-      <!-- header top -->
-      <div id="top">
-        <div class="logo"><img src="./images/logo.svg" alt="" /></div>
-        <div class="nav-container">
-          <nav class="navigation">
-            <ul>
-              <li class="nav-list">
-                <a href="#">
-                  Product <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-                </a>
-                <ul class="dropdown-menu-list">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Marketplace</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Integrations</a></li>
-                </ul>
-              </li>
-              <li class="nav-list">
-                <a href="#">
-                  Company <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-                </a>
-                <ul class="dropdown-menu-list">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-              </li>
-              <li class="nav-list">
-                <a href="#">
-                  Connect <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-                </a>
-                <ul class="dropdown-menu-list">
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Newsletter</a></li>
-                  <li><a href="#">LinkedIn</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="btn-container-top">
-            <button>Login</button>
-            <button>Sign Up</button>
-          </div>
-        </div>
-        <div class="nav-container-mobile">
-          <nav class="navigation">
-            <ul>
-              <li class="nav-list">
-                <a href="#">
-                  Product <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
-                </a>
-                <ul class="dropdown-menu-list">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Marketplace</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Integrations</a></li>
-                </ul>
-              </li>
-              <li class="nav-list">
-                <a href="#">
-                  Company <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
-                </a>
-                <ul class="dropdown-menu-list">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-              </li>
-              <li class="nav-list">
-                <a href="#">
-                  Connect <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
-                </a>
-                <ul class="dropdown-menu-list">
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Newsletter</a></li>
-                  <li><a href="#">LinkedIn</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="btn-container-top">
-            <button>Login</button>
-            <button>Sign Up</button>
-          </div>
-        </div>
-        <div class="nav-toggle-mobile">
-          <img class="nav-open" src="./images/icon-hamburger.svg" alt="" />
-          <img class="nav-close" src="./images/icon-close.svg" alt="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script defer src="script.js"></script>
+
+  <title>[Blogr]</title>
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <div class="bg-patterns">
+      <img class="pattern-desktop" src="./images/bg-pattern-intro-desktop.svg" alt="" />
+    </div>
+    <!-- header top -->
+    <div id="top">
+      <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+      <div class="nav-container">
+        <nav class="navigation">
+          <ul>
+            <li class="nav-list">
+              <a href="#">
+                Product <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" /></svg>
+              </a>
+              <ul class="dropdown-menu-list">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a href="#">
+                Company <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" /></svg>
+              </a>
+              <ul class="dropdown-menu-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a href="#">
+                Connect <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" /></svg>
+              </a>
+              <ul class="dropdown-menu-list">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="btn-container-top">
+          <button>Login</button>
+          <button>Sign Up</button>
         </div>
       </div>
-
-      <!-- header bottom -->
-      <div id="bottom">
-        <h1 class="header-heading">A modern publishing platform</h1>
-        <p class="header-para">
-          Grow your audience and build your online brand
-        </p>
-        <div class="btn-container-bottom">
-          <button>Start for free</button>
-          <button>Learn more</button>
+      <div class="nav-container-mobile">
+        <nav class="navigation">
+          <ul>
+            <li class="nav-list">
+              <a href="#">
+                Product <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" /></svg>
+              </a>
+              <ul class="dropdown-menu-list">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a href="#">
+                Company <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" /></svg>
+              </a>
+              <ul class="dropdown-menu-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a href="#">
+                Connect <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" /></svg>
+              </a>
+              <ul class="dropdown-menu-list">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="btn-container-top">
+          <button>Login</button>
+          <button>Sign Up</button>
         </div>
       </div>
-    </header>
-    <section id="section-1" >
-      <h1>Designed for the future</h1>
+      <div class="nav-toggle-mobile">
+        <img class="nav-open" src="./images/icon-hamburger.svg" alt="" />
+        <img class="nav-close" src="./images/icon-close.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- header bottom -->
+    <div id="bottom">
+      <h1 class="header-heading">A modern publishing platform</h1>
+      <p class="header-para">
+        Grow your audience and build your online brand
+      </p>
+      <div class="btn-container-bottom">
+        <button>Start for free</button>
+        <button>Learn more</button>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- sections start -->
+  <!-- section-1 start-->
+  <section id="section-1">
+    <h1>Designed for the future</h1>
+    <div class="content">
+      <div class="articles">
+        <div class="article article-1">
+          <h2>Introducing an extensible editor</h2>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.</p>
+        </div>
+        <div class="article article-2">
+          <h2>Robust content management</h2>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+      </div>
+      <div class="img-container">
+        <img class="illustration-desktop" src="./images/illustration-editor-desktop.svg" alt="">
+        <img class="illustration-mobile" src="./images/illustration-editor-mobile.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- section-1 end-->
+
+  <!-- section-2 start-->
+  <section id="section-2">
+    <div class="wrapper">
       <div class="content">
-        <div class="articles">
-          <div class="article article-1">
-            <h2>Introducing an extensible editor</h2>
-            <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-              change the looks of a blog.</p>
-          </div>
-          <div class="article article-2">
-            <h2>Robust content management</h2>
-            <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-          </div>
-        </div>
-        <div class="img-container">
-          <img class="illustration-desktop" src="./images/illustration-editor-desktop.svg" alt="">
-          <img class="illustration-mobile" src="./images/illustration-editor-mobile.svg" alt="">
+        <div class="img-container"><img src="./images/illustration-phones.svg" alt=""></div>
+        <div class="article">
+          <h2>State of the Art Infrastructure</h2>
+          <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+            connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="section-2">
+    </div>
+  </section>
+  <!-- section-2 end-->
 
-    </section>
-    <section id="section-3">
+  <!-- section-3 start-->
+  <section id="section-3">
+  </section>
+  <!-- section-3 end-->
+  <!-- sections end -->
+</body>
 
-    </section>
-  </body>
 </html>
